@@ -14,6 +14,21 @@ This is a basic PHP class for handling CSV file operations. It provides methods 
 - Handling CSV delimiter
 - Handling CSV header
 
+## Decometion
+
+-__construct($file, $delimiter = ",", $header = true): This is the constructor for the class. It takes three parameters: $file which is the path of the CSV file, $delimiter which is the delimiter used in the CSV file (defaults to ",") and $header which is a boolean value indicating if the CSV file has a header or not (defaults to true).
+
+-read(): This method reads the CSV file and returns an array of rows. It uses the fopen() function to open the file, fgetcsv() function to read the data and fclose() function to close the file.
+
+-write($data): This method takes an array of data as an argument and writes it to the CSV file. It uses the fopen() function to open the file, fputcsv() function to write the data, and fclose() function to close the file.
+
+-$file: This property contains the path of the CSV file.
+
+-$delimiter: This property contains the delimiter used in the CSV file.
+
+-$header : This property contains the header of the CSV file, whether it has or not.
+
+
 ## Usage
 
 To use the class, simply include it in your PHP script and create a new instance of the class. 
