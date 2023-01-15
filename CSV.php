@@ -1,3 +1,4 @@
+<?php
 class CSV {
     // file path
     private $file;
@@ -40,3 +41,5 @@ class CSV {
         return false;
     }
 }
+
+?>
